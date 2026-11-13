@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ボイスキャスト ｜ 空月の歌</title>
+  <meta name="description" content="コロンビーナ役の声優Lynnさんの紹介とキャストインタビュー。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="character.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<!-- ヘッダー / メニュー / フッター-->
+<div class="page page--sub page--voice">
+  <header class="header">
+    <a class="header__logo" href="index.html"><img src="img/logo-genshin-white.png" alt="原神" width="68" height="44"></a>
+    <button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu">
+      <span class="burger__line"></span><span class="burger__line"></span>
+    </button>
+  </header>
+  <nav class="menu" id="menu" aria-label="メインメニュー" hidden>
+    <ul class="menu__list">
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="character.html">キャラクター</a></li>
+      <li><a href="music.html">ミュージック</a></li>
+      <li><a href="voice.html">ボイスキャスト</a></li>
+      <li><a href="index.html#cooking">クッキング</a></li>
+      <li><a href="index.html#gallery">ギャラリー</a></li>
+    </ul>
+  </nav>
+  <main class="chara">
+    <section class="chara-head">
+      <h1 class="page-title"><span class="page-title__ja">ボイスキャスト</span><span class="page-title__en">Voice cast</span></h1>
+      <div class="page-visual page-visual--wide"><img src="img/voice-photo.png" alt="ボイスキャストのイメージ" width="320" height="130"></div>
+      <p class="chara-head__name-ja">Lynnさん</p>
+      <p class="chara-head__lead">コロンビーナ役を務めるのは、<br>声優のLynnさん。</p>
+    </section>
+    <section class="chara-section" id="lynn">
+      <h2 class="chara-title">Lynnさんについて</h2>
+      <p class="chara-text">
+        コロンビーナ役を務めるのは、声優のLynnさん。数多くの人気作品に出演している、実力を兼ね備えた声優さんです🍀
+      </p>
+      <p class="chara-text chara-text--gap">主な出演作</p>
+      <dl class="profile">
+        <div class="profile__row"><dt>ミオリネ・レンブラン</dt><dd>機動戦士ガンダム 水星の魔女</dd></div>
+        <div class="profile__row"><dt>斉藤ミヤコ</dt><dd>【推しの子】</dd></div>
+        <div class="profile__row"><dt>山内桜良</dt><dd>劇場アニメ『君の膵臓をたべたい』</dd></div>
+      </dl>
+      <p class="chara-text chara-text--gap">落ち着きのある透明感あふれる声質と高い表現力で幅広い役柄を演じ分けており、その唯一無二の歌声も高く評価されています✨</p>
+    </section>
+    <section class="chara-section" id="interview">
+      <h2 class="chara-title">キャストインタビュー</h2>
+      <p class="chara-text">
+        コロンビーナ役・Lynnさんへのキャストインタビューというものも公開されています🌙
+      </p>
+      <p class="chara-text">
+        インタビューでは、コロンビーナというキャラクターに対する第一印象や演じるうえで意識したこと、Lynnさんならではの視点からコロンビーナの魅力をたくさん知ることができます。
+      </p>
+      <p class="chara-text">
+        キャラクターをより深く理解したい人はもちろん、ストーリーをクリアした後に見ることで、新たな発見や解釈につながる内容となっており、初めて聴いたときの破壊力は半端ないので、是非覗いてみてください✨
+      </p>
+      <a class="btn btn--soft" href="https://www.youtube.com/watch?v=z6-34YlvRh4&si=3qiLYcb2p5o5U9uv">インタビューを見る</a>
+    </section>
+    <section class="chara-section chara-next" id="next">
+      <h2 class="chara-title">ほかのページ</h2>
+      <ul class="chara-next__list">
+        <li><a class="btn btn--glass" href="music.html">ミュージック</a></li>
+        <li><a class="btn btn--glass" href="character.html">キャラクター</a></li>
+        <li><a class="btn btn--glass" href="index.html">トップへ戻る</a></li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="footer footer--sub">
+    <img class="footer__hoyoverse" src="img/logo-hoyoverse.png" alt="HOYOVERSE" width="210" height="32" loading="lazy">
+    <img class="footer__genshin" src="img/logo-genshin-footer.png" alt="原神 Genshin" width="94" height="78" loading="lazy">
+    <small class="footer__copy">COPYRIGHT © COGNOSPHERE. ALL RIGHTS RESERVED.</small>
+  </footer>
+</div>
+<script>
+  (function () {
+    var burger = document.querySelector('.burger');
+    var menu = document.getElementById('menu');
+    function setOpen(open) {
+      burger.setAttribute('aria-expanded', String(open));
+      burger.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+      document.body.classList.toggle('is-menu-open', open);
+      menu.hidden = !open;
+    }
+    burger.addEventListener('click', function () { setOpen(burger.getAttribute('aria-expanded') !== 'true'); });
+    menu.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+  })();
+</script>
+<div class="fixed-top-box">
+  <a href="../Top.html" class="fixed-top-link">
+    <span class="fixed-top-icon">◀</span> 総合TOPへ戻る
+  </a>
+</div>
+</body>
+</html>

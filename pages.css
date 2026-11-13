@@ -1,0 +1,41 @@
+/* pages.css ― ミュージック / ボイスキャスト用 */
+.page-title { margin: 0; font-weight: 400; text-align: center; }
+.page-title__ja { display: block; font-size: 30px; letter-spacing: .08em; line-height: 1.4; text-shadow: 0 0 12px rgba(120,160,255,.8); }
+.page-title__en { display: block; margin-top: 2px; font-size: 13px; letter-spacing: .14em; }
+.page-visual { display: block; margin: 24px auto 0; }
+.page-visual img { width: 100%; height: auto; }
+.page-visual--tall { width: 220px; max-width: 70%; }
+.page-visual--wide { width: 320px; max-width: 100%; border-radius: 22px; overflow: hidden; }
+.page-visual--tall img { box-shadow: 0 0 24px rgba(200,220,255,.6); border-radius: 110px; }
+.chara-head .chara-head__name-ja { margin-top: 20px; }
+.chara-text + .chara-text { margin-top: 14px; }
+.chara-text--gap { margin: 22px 0 10px; }
+.chara-section .profile + .chara-text--gap { margin-top: 24px; }
+
+.page--music {
+  background: linear-gradient(180deg, #aed1ff 0, #e6f2ff 380px, #dcebff 60%, #b9d6ff 100%);
+}
+.page--music .chara { color: #2f3f9c; }
+.page--music .page-title__ja,
+.page--music .chara-title { text-shadow: none; }
+.page--music .chara-title { border-left-color: #2f3f9c; }
+.page--music .page-visual--tall img { box-shadow: 0 0 24px rgba(91,120,246,.35); }
+.page--music .btn--soft { background: #4a5bd0; color: #fff; }
+.page--music .btn--glass { border-color: #2f3f9c; background: rgba(255,255,255,.55); color: #2f3f9c; }
+
+
+.page--voice { background: var(--color-sky); }
+.page--voice .chara { padding-bottom: 56px; color: #2f3f9c; }
+.page--voice .page-title__ja { text-shadow: none; }
+.page--voice .chara-section {
+  margin: 36px 16px 0;
+  padding: 28px 20px 32px;
+  border-radius: 22px;
+  background: var(--color-card);
+  color: var(--color-text-dark);
+}
+.page--voice .chara-title { border-left-color: #2f3f9c; text-shadow: none; }
+.page--voice .profile__row { border-color: rgba(0, 0, 0, .18); }
+.page--voice .profile dt { color: #555; }
+.page--voice .btn--soft { background: #4a5bd0; color: #fff; }
+.page--voice .btn--glass { border-color: #2f3f9c; background: rgba(255,255,255,.7); color: #2f3f9c; }
